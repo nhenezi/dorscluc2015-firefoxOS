@@ -1,157 +1,633 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<head>
-	<title>Shower Presentation Engine with Mozilla Theme</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=792, user-scalable=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="shower/themes/mozilla/styles/style.css">
-</head>
-<body class="list">
-	<header class="caption">
-        <h1>Shower Presentation Engine with Mozilla Theme</h1>
-		<p>Yours Truly, Famous Inc.</p>
-	</header>
-	<section class="slide cover" id="Cover"><div>
-        <h2>Shower (with Mozilla Theme) Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a> and <a href="http://mte90.net">Daniele Scasciafratte</a></p>
-		<img src="pictures/cover.jpg" alt="">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
-	</div></section>
-	<section class="slide"><div>
-		<h2>Shower Key Features</h2>
-		<ol>
-            <li class="color-lightblue">Built on HTML, CSS and vanilla JavaScript</li>
-            <li class="color-nightlyblue">All modern browsers are supported</li>
-            <li class="color-blue">Slide themes are separated from engine</li>
-            <li class="color-yellow">Fully keyboard accessible</li>
-            <li class="color-lightorange">Printable to PDF</li>
-            <li class="color-orange">Choose text color from Firefox colors</a>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</div></section>
-	<section class="slide red"><div>
-		<h2>Plain Text on Your Slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</div></section>
-	<section class="slide blue"><div>
-		<h2>All Kind of Lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
-	</div></section>
-	<section class="slide darkgray"><div>
-		<h2>Serious Citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Code Samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code>&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Even Tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</div></section>
-	<section class="slide cover"><div>
-		<h2 class="left">Pictures</h2>
-		<img src="pictures/picture.jpg" alt="">
-	</div></section>
-	<section class="slide shout gradient-nightly"><div>
-		<h2>You can even shout this way</h2>
-	</div></section>
-	<section class="slide"><div>
-		<h2>Inner Navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</div></section>
-	<section class="slide shout" id="SeeMore"><div>
-		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
-		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-			#SeeMore img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
-	</div></section>
-	<section class="slide"><div>
-        <h2>Question?</h2>
-        <figure class="frame place swing">
-        <img src="pictures/redpanda.jpg" alt="Red panda (Firefox)">
+  <head>
+    <title>Firefox OS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=792, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="shower/themes/mozilla/styles/style.css">
+  </head>
+  <body class="list">
+    <header class="caption">
+      <h1>Firefox OS - DORS/CLUC 2015</h1>
+      <p>Nikola Henezi</p>
+    </header>
+    <section class="slide cover" id="Cover">
+      <div>
+        <img src="pictures/cover.png" style="width:99%;" alt="">
+      </div>
+      <footer>
+      Firefox OS is a new open operating system for smartphones,
+      tablets and smart Tvs developed by Mozilla built entirely
+      using HTML5 and other open Web standards.
+        You may ask yourself, why do we need another operating system?
+        We already have Google Android, Apple iOS, Microsoft Windows Phone,
+        Caonical Ubuntu, Blackbery, Xiaomi MIUI, Amazons FireOS, CyanogenMod,
+        Replicant...
+        To answer that question first we have to explore web and what's wrong with current
+        smartphone ecosystem.
+      </footer>
+
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Problems with existing mobile operating systems</h2>
+        <ul>
+          <li class="next">Vendor lock-in</li>
+          <li class="next">Multiple codebases for one application</li>
+          <li class="next">Apps are not portable</li>
+        </ul>
+      </div>
+      <footer>
+      It doesn't really matter who makes your smartphone, it's a completely
+      locked in system. If you look at Apple for example.
+      Everything on a device is made by one company - Apple. All the technology
+      choices Apple has decided for you. Language you use is Apple exclusive
+      language. Even device experience - marketplace. You have to comply with apple rules
+      (e.g. you can't compete with safari). Owner of the platform sets rules that you have to comply.
+      -
+      Mutliple codebases for single applications.
+      -
+      Bacause each company makes their own choices (Java, o-c, swift)
+      you have to rewrite apps for android/ios. And it makes no sense!
+      App experience is basically the same on all smartphone platforms. Your use
+      cases are the same, input methods wheher it is touch, camare - it's
+      an input that goes in your device.
+      -
+      Apps aren't portable
+      -
+      Let's say you pay for dozens of applications on Android and one day you
+      want to switch to iOS. What happens with your applications? They get
+      stuck on Android - you can't transfer them on another OS.
+      -
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Why is web successful?</h2>
+        <ul>
+          <li>It's easy to create</li>
+          <li class="next">It's open</li>
+          <li class="next">It's a collaborative effort</li>
+          <li class="next">It's portable</li>
+          <li class="next">It's distributed</li>
+        </ul>
+      </div>
+      <footer>
+       ----- It's easy to create
+       Everyone could create a website - entry barier was really low.  If you haven't created a website I urge you to do so. You can type in some text and then change colors.  With web I can teach anyone to create a website in 20 minutes. Technologies are open, decentralized and easy to learn.
+       ------ Open
+       It's built on a principle that everyone can be on web just by using HTTP and something that can display HTML.
+       All the technologies you need to build a browser are documented somewhere and you can freely implement them and create your own browser.
+       That's what makes it possible to have a competition in a desktop browser space.  -
+       Google and Mozilla for example can both implement a browser (Chrome and Firefox) and they both render roughly the same web.
+       Because of the open standards Competition has shifted from we can display certain types of web to who can implement them better.
+       It's no longer they have ActiveX and we have something else and they can only render their part of the web and we can render only our part of the web.
+       ------ Colaboration
+       That's why web has been moving so fast - we are colaboratevely working on new standard.
+       Individual companies cannot just add technologies to the web - it's not how it works. We can propose a new API, code a prototype and work with other vendors to standarnize it.  It's doesn't matter who proposes new API as long as it makes sense because in the end we all want to move web forward.
+       ------ Portability
+       You can choose your own browser and web will be roughly the same.
+       You can change operating systems and web won't change.
+       You can change devices and web won't change.
+       ------ Distributed
+       There isn't a single entytt that owns web. If there was web probably wouldn't be open.
+       -
+       All these things have worked really well on desktop. Mozilla would like to apply these things on mobile. Since all technologies on the web are open - one of the ways to break out of the walled gardens that smartphones create is to bring supercharged web to smartphone.
+      </footer>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Booting to the Web</h2>
+        <figure>
+          <blockquote>
+            <p>... To that end, we propose a project we’re calling "Boot to Gecko" (B2G)
+              to pursue the goal of building a
+              complete, standalone operating system for the open web.
+            </p>
+          </blockquote>
+          <figcaption>Andreas Gal, 25.07.2011</figcaption>
         </figure>
-    </div></section>
-    
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
-	<div class="progress"><div></div></div>
-	<script src="shower/shower.min.js"></script>
-	<!-- Copyright © 2014 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
-</body>
-</html>
+      </div>
+      <footer>
+      We aren't trying to have native-grade apps just run on Firefox, we're
+      trying to have them run on the open web
+
+      Taking the same approach and methods making new standards, making sure it's
+      open technology, using standard bodies (like w3c) all these things that
+      have worked really well for the desktop we would like to apply on mobile
+      space.
+
+      So the goal is to make devices where web is the core technologies and as
+      the result other technologies are open.
+      </footer>
+    </section>
+
+
+
+    <section class="slide">
+      <div>
+        <h2>What we already had</h2>
+        <ul>
+          <li>Offline support (IndexDB, LocalStorage)</li>
+          <li>Hardware acceleration/performance</li>
+          <li>Video/audio playback</li>
+          <li class="next">Developers</li>
+        </ul>
+      </div>
+      <footer>
+      -
+      By using the web as a platform we already had a few thigs solved, but the
+      most importat one is: Developers.
+      -
+      There are milions of web developers so by choosing web we made sure that
+      our marketplace will be filled with apps.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>What we had to do</h2>
+        <ul>
+          <li>Hardware Access</li>
+        </ul>
+      </div>
+      <footer>
+      Phones have really cool stuf in them. Sensors, touch screens, radios, cameras
+      so we needed a way to access those features with HTML5.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>APIs</h2>
+        <p>
+           Vibration API, Screen Orientation, Geolocation API, Mouse Lock API,
+           Open WebApps, Network Information, API Battery Status API, Alarm API,
+           Push Notifications API, WebFM API / FMRadio WebPayment, IndexedDB,
+           Ambient light sensor, Proximity sensor, Notification, Device Storage
+           API, Browser API, TCP Socket API, Contacts API, systemXHR, WebTelephony,
+           WebSMS Idle API, Settings API, Power Management, API Mobile,
+           Connection API, WiFi Information API, WebBluetooth, Permissions API,
+           Network Stats API, Camera AP,I Time/Clock API, Attention screen,
+           Voicemail
+        </p>
+      </div>
+      <footer>
+      These are all the APIs that we defined to access everything in device,
+      all of these are open javascript APIs, porposed to W3c and implemented
+      accross other browsers.
+
+      All these are discussed with other vendors right now for final standard.
+      I'll not go trough all of them, but I'll show you Battery API for
+      example.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <header>
+          <h2>Battery API</h2>
+        </header>
+        <meter value="1"></meter>
+        <script>
+          var meter = document.querySelector('meter');
+          meter.value = navigator.battery.level;
+        </script>
+        <pre><code>&lt;meter&gt;&lt;/meter&gt;</code>
+<code>var meter = document.querySelector('meter');</code>
+          <code>var b = navigator.battery;</code>
+          <code>if (b) {</code>
+          <code>  meter.value = b.level;</code>
+          <code>  // events: levelchange,chargingchange</code>
+          <code>  // chargingtimechange, dischargingtimechange</code>
+          <code>}</code>
+        </pre>
+        <footer class="notes">
+          This is an example of how to use one of those APIs. They come with properties, methods and fire a lot of events which makes it easy to include them in your own solutions. And as you can see using a simple if statement around your code ensures that only environments that support it execute your code.
+
+          That's how easy it is to get battery status. People say why would I
+          want that, I have operating system to display me current battery
+          status.
+
+          Wouldn't you want that when your battery gets low
+          applications automaticaly save content?
+          -
+        </footer>
+
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>What we had to do</h2>
+        <ul>
+          <li>Hardware Access</li>
+          <li>Security model</li>
+        </ul>
+      </div>
+      <footer>
+          So now that we have that we don't really want to allow every
+          application to access every API, so we had to come up with
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>App manifest</h2>
+        <pre style="font-size:0.6em"><code>
+{
+  "name": "My App",
+  "description": "My elevator pitch goes here",
+  "launch_path": "/index.html",
+  "icons": {
+    "512": "/img/icon-512.png",
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Your name or organization",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}
+        </code>
+        </pre>
+      </div>
+      <footer>
+      App manifest provides informationa about an app - it's a simple document
+      usable by both users and app stores. Stuff like icons and developer
+      information.
+
+      Most importang thing about manifest are permissions - they allow you to
+      make informed decisions about the apps before installing them
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Application types</h2>
+        <ul>
+          <li>Hosted</li>
+          <li>Packaged</li>
+        </ul>
+        <div class="next">
+        <ul>
+          <li>Web - least access to WebAPIs (default for hosted)</li>
+          <li>Priviledged</li>
+          <li>Certified - critical system functions (dialer, system settings)</li>
+        </ul>
+        <pre style="font-size:0.8em"><code>
+  ...
+  "type": "priviledged"
+  ...
+        </code>
+        </pre>
+        </div>
+      </div>
+      <footer>
+      Hosted apps are stored on your server, easy to upgrade, limited access to
+      API
+      Packaged apps are ones that are packed and go trough a security review
+      -
+      Priviledged apps have been reviewed and they offer access to more webAPs
+      then hosted, e.g. camera, contacts, nfc.
+      Only packaged apps can be priviledged
+      -
+      Certified apps. These have all the permissions of privileged and web apps
+      plus more. Certified/internal apps can only be installed on a device by
+      Mozilla or a device vendor; not 3rd party developers.
+      </footer>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>App manifest - Permissions</h2>
+        <pre style="font-size:0.8em"><code>
+"permissions": {
+  "contacts": {
+    "description": "Required for autocompletion",
+    "access": "readcreate"
+    },
+  "alarms": {
+    "description": "Required to schedule notifications"
+  }
+}
+        </code>
+        </pre>
+      </div>
+      <footer>
+        Here is how you define permissions your app needs. Firefox OS allows
+        graunlar permission definition, which means that you can turn off only
+        small subset of permissions.
+
+        E.g. Twitter applications requires geolocations, so you can go to `App
+        permissions` and disable it
+      </footer>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>What we had to do</h2>
+        <ul>
+          <li>Hardware Access</li>
+          <li>Security model</li>
+          <li>Development environment</li>
+        </ul>
+      </div>
+      <footer>
+        Another big thing is the development environment. There is a question
+        on stackoverflow which SDK do I need to dowload so I can start
+        developing firefoxOS applications. Answer is you don't need to download
+        anything.
+
+        If you've managed to post on stackoverflow you probably have everything
+        you need for firefox OS development - everything is integrated into
+        Firefox.
+
+        Let me quickly show you web IDE, because what can go wrong when you do
+        live demos.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>What we had to do</h2>
+        <ul>
+          <li>Hardware Access</li>
+          <li>Security model</li>
+          <li>Development environment</li>
+          <li>App interoperability</li>
+        </ul>
+      </div>
+      <footer>
+        How do apps communicate? What if I have an application which requires
+        users picture?
+
+        App should have access to camera od gallery, it should just state its
+        intent and wait for result.
+
+        How did we solve this?
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Web activities</h2>
+        <ul style="float: left">
+          <li>configure</li>
+          <li>costcontrol</li>
+          <li>dial</li>
+          <li>open</li>
+          <li>pick</li>
+          <li>record</li>
+          <li>save-bookmark</li>
+          <li>share</li>
+          <li>view</li>
+        </ul>
+        <img src="pictures/pick-activity.jpg" style="float:right" width="30%"/>
+      </div>
+      <footer>
+        It's another proposal. Idea is that app shouldn't care how did you get
+        that information, it's up to the user to decide.
+      </footer>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>Retrieving contact information</h2>
+        <pre><code>
+var pick = new MozActivity({
+  name: "pick",
+  data: { type: "webcontacts/contact", fullContact: "true" }
+});
+pick.onsuccess = function (Contact) {
+  console.log("Name " + Contact.name + " number " +
+              Contact.number);
+};
+        </code></pre>
+      </div>
+      <footer>
+        Here you defined a new activity which will ask user to pick a contact -
+        user decides which app does he want to use for picking a contact.
+        After contact is picked onsuccess function is run.
+      </footer>
+    </section>
+
+
+
+
+    <section class="slide">
+      <div>
+        <h2>What we had to do</h2>
+        <ul>
+          <li>Hardware Access</li>
+          <li>Security model</li>
+          <li>Development environment</li>
+          <li>App interoperability</li>
+          <li>App distribution</li>
+        </ul>
+      </div>
+      <footer>
+        How do you find my app? How quickly does my app display on marketplace.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Marketplace or web</h2>
+      <pre><code>var installapp = navigator.mozApps.install(manifestURL);</code>
+        <code>installapp.onsuccess = function(data) {</code>
+        <code>  // App is installed</code>
+        <code>};</code>
+        <code>installapp.onerror = function() {</code>
+        <code> // App wasn't installed, info is in </code>
+        <code> // installapp.error.name</code>
+        <code>};</code>
+        </pre>
+    </div>
+    <footer>
+      You can install the app with this lines of code on the web. So if user
+      visits you webpage and you have above lines of code - it will prompt user
+      to install app on his phone.
+    </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Architectural Overview</h2>
+        <img src="pictures/platform_overview.png" height="70%"/>
+      </div>
+      <footer>
+      Firefox OS architecture is split into three parts:
+      Gaia - user interface layer
+      Gecko - Application runtime
+      Gonk - lower level of fx platform
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Architectural Overview - Details</h2>
+        <img src="pictures/security_framework.png" width="100%"/>
+      </div>
+      <footer>
+    Gaia
+    -
+       User interface layer of Firefox OS - everything that appears on the screen
+       after FxOS stars up is drawn by gaia. It's written entirely in HTML, CSS
+       nad javascript. You can think of Gaia as a web applications running on
+       firefox OS software stack.
+
+       Its only interface to the underlying operating system and hardware is
+       trough standard Web APIs, which are implemented by Gecko.
+    Gecko
+    -
+       Geko is Firefox OS application runtime ; everything that is needed for
+       html, css and javascript. it makes ure that thes APIs work on all
+       operating systems that Gecko supports.
+       It connects hardware  to HTML and Javascript by providing abstraction,
+       interface over hardware layer.
+    Gonk
+    -
+       Gonk is lower level of the Firefox OS patform, consisting of linux kernel
+       based on Android Open Source Project and Hardware abstraction layer.
+       Basically Gonk is a simple linux distribution - we say that Gonk is a
+       porting target of Gecko.
+
+       That is there is a port of Gecko to Gonk, just like there is a port of
+       Gecko to OSX, Windows or Android, but since we have full controll over
+       Gonk we can expose interfaces to Gecko that can't be exposed on other
+       operating systems, such as telephony stack.
+
+       Gonk exposes hardware capabilities to Web APIS implemented in Gecko.
+      </footer>
+    </section>
+
+
+    <section class="slide">
+      <div>
+        <h2>V 3.0</h2>
+        <ul>
+          <li class="next">Offline caching</li>
+          <li class="next">Storing content in the cloud</li>
+        </ul>
+      </div>
+      <footer>
+        Web apps aren't fast as they could be. We are building large fragile
+        single-threaded applications that cannot leverage the full power of the
+        device they are running on. The V3 is going to flip web application
+        model on it's head using bleeding edge web-technologies
+        -
+        Offline caching
+        -
+        In the current version FirefoxOS depends on `packaged` apps to provide
+        offline experience. This is a proprietery approach and misses search
+        engine discovery, deep linking and automatic updates.
+        -
+         Storing content in the cloud
+         -
+         Since with firefox OS apps are breaking free from device, it makes
+         sense for content to do the same. If both your apps and your content
+         can be accessed from the anywhere, so can you OS.
+
+         - We're proposing that users can assign third party cloud storage
+         (dropbox, drive) to their Firefox account and provide interface to
+         allow apps to store and retrieve account.
+         -
+        Service workers
+        -
+        Can be used for things like:
+         - Background data syncronization
+         - client side compiling
+         - centralized updating of resource (e.g. geolocation) so multiple
+         pages can use same set of data
+         - performance enhancements
+         -
+         -
+           </ul>
+         </div>
+       </footer>
+     </section>
+
+     <section class="slide">
+       <div>
+        <h2>V 3.0</h2>
+        <ul>
+          <li>Offline caching</li>
+          <li>Storing content in the cloud</li>
+          <li>Web components</li>
+          <li class="next">Delta updates</li>
+          <li class="next"> Multi threaded architecture</li>
+          <li class="next">Macro memory management</li>
+        </ul>
+       </div>
+       <footer>
+         -
+         Web components
+         -
+         We don't have enought html markup to semanticaly. You can think of web
+         components as reusable user interface widgets that are created using
+         open web technology.
+         -
+         Delta updates
+         -
+         updates that can be applied without restart
+         -
+         Multi threaded architecture
+         -
+          Servce worker is a script that is run in the background, separate from
+          a web page, in a separate thread.
+         -
+         Macro memory management
+         -
+         Shutting down parts
+         Right now our apps run in a single runtime, the window. All the memory
+         our applications with this window. When app is sent to the background
+         we can't free any memory until entire app is closed.
+
+         Spreading applications across mutliple documents and workers  we're
+         able to break up our application smaller chunks and switch them off
+         when they aren't needed. This upens up exciting proposals for memory
+         management.
+      </footer>
+    </section>
+
+    <section class="slide">
+      <div>
+        <h2>Flame giveaway</h2>
+        <ul>
+          <li><a href="http://www.mozilla-hr.org">www.mozilla-hr.org</a></li>
+          <li>Flame device giveaway</li>
+          <ul>
+            <li>Luck - take picture with Mozilla</li>
+            <ul>
+              <li>Twitter: <a href="https://twitter.com/MozillaHrvatska">@mozillahrvatska</a> #dorscluc</li>
+              <li>Facebook: <a href="https://www.facebook.com/mozilla.hrvatska">Mozilla Hrvatska</a></li>
+            </ul>
+            <li>Sweat - workshoop (sign up at reception)</li>
+          </ul>
+        </ul>
+      </div>
+      <footer>
+        We are organizing a flame giveaway - we are giving flame device sif you
+        take a picture with mozilla (and that can be anyting) - you can put a
+        sticker on desk and take a picture of it and put it on twitter/facebook (with appropriate tags)
+        --
+        Sweat. You can sign up for our workshoop (Wednesday at 13:45) and
+        create an application.
+      </footer>
+    </section>
+
+      <div class="progress"><div></div></div>
+      <script src="shower/shower.min.js"></script>
+    </body>
+  </html>
